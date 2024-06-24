@@ -1,0 +1,24 @@
+import random
+while True:
+    computer = ['rock', 'paper', 'scissor']
+    option = random.choice(computer)
+    print("rock")
+    print("paper")
+    print("scissor")
+    print("choice the option")
+    print("::write spell correctly as option given below::")
+    user_choice = input("choice :: ---> ")
+    if option == user_choice:
+        print("It's a draw!")
+    elif option == 'rock' and user_choice == 'scissor':
+        print('Computer wins!')
+    elif option == 'paper' and user_choice == 'rock':
+        print("Computer wins!")
+    elif option == 'scissor' and user_choice == 'paper':
+        print("Computer wins!")
+    else:
+        print('You win')
+    print("computer choice is :", option)
+    play_again = int(input("press 1 :yes || press 0: no :::  "))
+    if play_again != 1:
+        break
